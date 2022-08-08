@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              AlmostWhite: "hsl(0, 0%, 98%)",
+              MediumGray: "hsl(0, 0%, 41%)",
+              AlmostBlack: "hsl(0, 0%, 8%)",
+            },
+          },
+        },
+      };
+    </script> -->
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center px-5 md:px-20 py-5">
+        <div class="flex items-center">
+          <!-- Logo -->
+          <h1 class="font-bold text-3xl md:text-5xl mr-48 animate-bounce">
+            <a href="#">Snap</a>
+          </h1>
+
+          <!-- Menu 1 -->
+          <div class="hidden md:block">
+            <ul class="flex text-gray-600">
+              <li>
+                <a href="#" class="flex items-center">
+                  Features
+                  <img src="./images/icon-arrow-down.svg" alt="" class="ml-2" />
+                </a>
+              </li>
+              <li class="ml-6">
+                <a href="#" class="flex items-center">
+                  Company
+                  <img src="./images/icon-arrow-down.svg" alt="" class="ml-2" />
+                </a>
+              </li>
+              <li class="ml-6"><a href="#">Careers</a></li>
+              <li class="ml-6"><a href="#">About</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Menu 2 -->
+        <div class="hidden md:block">
+          <ul class="flex text-gray-600">
+            <li class="mr-6"><a href="#">Login</a></li>
+            <li class="outline rounded-md">
+              <a href="#" class="p-6">Register</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hammburger -->
+        <img src="./images/icon-menu.svg" alt="" class="md:hidden" />
+      </nav>
+
+      <!-- Hero section -->
+      <section
+        class="px-5 md:px-64 mt-20 flex flex-col-reverse md:flex-row md:flex items-center justify-between"
+      >
+        <article class="text-center md:text-start">
+          <h1 class="font-bold text-5xl md:text-7xl mb-10 md:mb-16">
+            Make <br />
+            remote work
+          </h1>
+          <p class="mb-10 md:mb-16 text-gray-600 leading-9">
+            Get your team in sync, no matter your location. Streamline
+            <br />
+            processes, create team rituals, <br />
+            and watch productivity soar.
+          </p>
+          <button
+            class="outline py-3 px-5 text-white bg-black rounded-md transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover: duration-300 mb-32 md:mb-40"
+          >
+            Learn more
+          </button>
+          <div class="flex items-center w-24 mb=9 md:w-32">
+            <img src="./images/client-databiz.svg" alt="" class="mr-5" />
+            <img src="./images/client-audiophile.svg" alt="" class="mr-5" />
+            <img src="./images/client-meet.svg" alt="" class="mr-5" />
+            <img src="./images/client-maker.svg" alt="" />
+          </div>
+        </article>
+        <div class="w-10/12 mb-20 md:w-5/12">
+          <img src="./images/image-hero-desktop.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
