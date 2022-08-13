@@ -29,7 +29,7 @@
       };
     </script> -->
   </head>
-  <body>
+  <body class="relative">
     <header>
       <nav class="flex justify-between items-center px-5 md:px-20 py-5">
         <div class="flex items-center">
@@ -70,7 +70,42 @@
         </div>
 
         <!-- Hammburger -->
-        <img src="./images/icon-menu.svg" alt="" class="md:hidden" />
+        <img
+          src="./images/icon-menu.svg"
+          alt=""
+          class="hidden md:hidden w-full"
+        />
+
+        <!-- collapsed menu -->
+        <!-- <div
+          class="bg-green-800 absolute pl-10 md:hidden top-0 right-0 mt-5 text-white w-9/12 h-screen"
+        >
+          <img
+            src="./images/icon-close-menu.svg"
+            alt=""
+            class="absolute top-5 right-10"
+          />
+          <ul class="mt-20">
+            <li class="mb-5">
+              <a href="#" class="flex items-center"
+                >Features
+                <img src="./images/icon-arrow-down.svg" alt="" class="ml-2" />
+              </a>
+            </li>
+            <li class="mb-5">
+              <a href="#" class="flex items-center"
+                >Company
+                <img src="./images/icon-arrow-down.svg" alt="" class="ml-2" />
+              </a>
+            </li>
+            <li class="mb-5">
+              <a href="#" class="flex items-center">Careers </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">About</a>
+            </li>
+          </ul>
+        </div> -->
       </nav>
 
       <!-- Hero section -->
@@ -100,8 +135,17 @@
             <img src="./images/client-maker.svg" alt="" />
           </div>
         </article>
-        <div class="w-10/12 mb-20 md:w-5/12">
-          <img src="./images/image-hero-desktop.png" alt="" />
+        <div class="mb-20 md:w-5/12">
+          <img
+            src="./images/image-hero-desktop.png"
+            alt=""
+            class="hidden md:block"
+          />
+          <img
+            src="./images/image-hero-mobile.png"
+            alt=""
+            class="block md:hidden"
+          />
         </div>
       </section>
     </header>
